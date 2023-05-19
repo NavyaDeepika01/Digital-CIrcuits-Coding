@@ -12,4 +12,13 @@ The NAND and NOR gates are the complements of the previous AND and OR functions 
 ## Gates Implementation using NOR Gate
 ![image](https://github.com/NavyaDeepika01/Digital-CIrcuits-Coding/assets/114293031/f691d554-9003-4430-a91a-a5b542b0810e)
 
-## Verilog Code to Implementing gates using NAND Gate: 
+## Verilog Code to implement gates using NAND Gate: 
+The code is written in Dataflow Modelling.
+![image](https://github.com/NavyaDeepika01/Digital-CIrcuits-Coding/assets/114293031/6500ef61-447e-4590-ba89-05b637dd1ad4)
+
+## Verilog Code to implement gates using NOR Gate: 
+The Code is written in Gatelevel Modelling.
+
+![image](https://github.com/NavyaDeepika01/Digital-CIrcuits-Coding/assets/114293031/e87b718a-801d-4c5a-a045-cffbc22c6eb2)
+ 
+                                                                                                                  - By S.Navya Deepika
