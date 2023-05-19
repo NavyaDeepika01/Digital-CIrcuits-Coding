@@ -1,1 +1,1 @@
-# Digital-CIrcuits-Coding
+# Digital-Circuits-Coding
