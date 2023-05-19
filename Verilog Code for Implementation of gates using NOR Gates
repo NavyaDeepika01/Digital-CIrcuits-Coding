@@ -1,0 +1,38 @@
+### Gate Level Modelling: 
+module nor_gate(input a, input b, output wire out);
+        assign out = ~(a|b);
+endmodule
+
+module nor_to_not_gate(input a,output wire out);
+nor(out,a);
+endmodule
+
+module nor_to_or_gate(input a, input b,output wire out);
+wire c;
+nor(c,a,b);
+nor(out,c);
+endmodule
+
+module nor_to_and_gate(input a,input b,output wire out);
+wire c,d,e,f;
+nor(c,a);
+nor(d,b);
+nor(out,c,d);
+endmodule
+
+module nor_to_nand_gate(input a,input b,output wire out);
+wire c,d,e,f;
+nor(c,a);
+nor(d,b);
+nor(e,c,d);
+nor(out,e);
+endmodule
+
+module nand_to_xor_gate(input a,input b, output wire out);
+wire c,d,e,f; 
+nor(c,a,b);
+nor(d,a);
+nor(e,b);
+nor(f,d,e);
+nor(out,f,c);
+endmodule                        
