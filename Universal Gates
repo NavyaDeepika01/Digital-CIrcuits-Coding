@@ -1,5 +1,38 @@
-#Universal Gates - Detail
-In digital electronics, gates are fundamental building blocks used to perform logical operations on binary inputs(0s and 1s). 
-Gates are typically implemented using electronic components such as transistors. 
-While there are several types of logic gates, universal gates hold a special place as they can be used to implement any other gate. 
-Two important universal gates are NAND and NOR gates. 
+### Dataflow Model: 
+module nand_gate(input a, input b, output wire out);
+        assign out = ~(a&b);
+endmodule
+
+module nand_to_not_gate(input a,output wire out);
+assign out = ~(a&a);
+endmodule
+
+module nand_to_and_gate(input a, input b,output wire out);
+wire c,d,e; 
+assign c=~(a&b);
+assign out = ~c;
+endmodule
+
+module nand_to_or_gate(input a,input b,output wire out);
+wire c, d, e; 
+assign c=~(a&a); 
+assign d=~(b&b); 
+assign out =~(c&d);
+endmodule
+
+module nand_to_nor_gate(input a,input b,output wire out);
+wire c, d, e; 
+assign c=~(a&a); 
+assign d=~(b&b); 
+assign e =~(c&d);
+assign out = ~(e&e);
+endmodule
+
+module nand_to_xor_gate(input a,input b, output wire out);
+wire c,d,e,f,g,h; 
+assign c=~(a&a); 
+assign d=~(b&b);
+assign e=~(c&b);
+assign f=~(a&d);
+assign out=~(e&f);
+endmodule
